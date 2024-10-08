@@ -1,7 +1,7 @@
 # VICNTM
 a self-superivised neural topic model with variance-invariance-covariance regularization
 
-<img src=sslntm.png width=500px>
+<img src=2in1vic_v2.jpg width=500px>
 
 data_{dataset name}.py are python files that download and preprocess the datasets used in experiments.
 
