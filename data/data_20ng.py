@@ -86,7 +86,7 @@ idx_permute = np.random.permutation(trSize+vaSize).astype(int)
 
 # Remove words not in train_data
 # vocab = list(set([w for idx_d in range(trSize) for w in init_docs[idx_permute[idx_d]].split() if w in word2id]))
-with open('./compare_vocabs/20NG/vocabulary.txt','r') as f:
+with open('./20NG/vocabulary.txt','r') as f:
     vocab = f.read().split('\n')
     print(vocab[0])
 word2id = dict([(w, j) for j, w in enumerate(vocab)])
