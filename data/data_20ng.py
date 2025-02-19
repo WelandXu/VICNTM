@@ -93,7 +93,7 @@ word2id = dict([(w, j) for j, w in enumerate(vocab)])
 id2word = dict([(j, w) for j, w in enumerate(vocab)])
 print('  vocabulary after removing words not in train: {}'.format(len(vocab)))
 
-path_save = './test_20NG_min_df_' + str(min_df) + '/'
+path_save = './20NG_min_df_' + str(min_df) + '/'
 if not os.path.isdir(path_save):
     os.system('mkdir -p ' + path_save)
 docs_txt = '\n'.join([' '.join([w for w in init_docs[i].split() if w in word2id]) for i in range(len(init_docs))])
